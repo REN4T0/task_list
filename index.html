@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="robots" content="Index">
+    <meta name="rating" content="general">
+    <meta name="author" content="Renato Teixeira Viturino">
+    <meta name="Custodian" content="Renato Teixeira Viturino">
+    <meta name="copyright" content="© 2024 HIVEFRAME Technologies">
+    <meta name="description" content="Crie uma lista de tarefas para não esquecer de seus compromissos!">
+    <meta name="keywords" content="lista tarefas task list organizar">
+
+    <meta name="DC.creator.address" content="renatecdev@gmail.com">
+    <meta name="DC.publisher" content="HIVEFRAME Technologies">
+    <meta name="DC.date.created" content="2024-09-16">
+    <meta name="DC.format" content="text/html">
+    <!-- <meta name="DC.Identifier" content=""> -->
+
+    <meta http-equiv="content-script-type" content="text/javascript">
+    <meta http-equiv="content-style-type" content="text/css">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta http-equiv="cache-control" content="private">
+
+    <meta property="og:title" content="Lista de tarefas">
+    <meta property="og:image" content="./icons/task.png">
+    <!-- <meta property="og:url" content=""> -->
+    <meta property="og:type" content="website">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./js/assets/length.js" defer></script>
+    <script type="module" src="./js/script.js" defer></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./icons/task.png" type="image/x-icon">
+
+    <title>Lista</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button class="add">+</button>
+            <p>Nova Tarefa</p>
+        </nav>
+    </header>
+
+    <main></main>
+
+    <div class="toast">
+        <p></p>
+    </div>
+
+    <div class="modal">
+        <form method="post">
+            <div>
+                <h1>Criar Tarefa</h1>
+                <button class="close">X</button>
+            </div>
+
+            <label for="taskName">Tarefa</label>
+            <input type="text" name="taskName" id="taskName" placeholder="Insira o nome da tarefa..." maxlength="25" required>
+
+            <label for="taskDetails">Detalhes</label>
+            <textarea name="taskDetails" id="taskDetails" placeholder="Fale mais sobre a tarefa..." maxlength="450" required></textarea>
+            <p>0/450</p>
+
+            <button type="submit" class="save">Salvar</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+p, label{
+    font-size: 1.2vw;
+}
+
+h1{
+    font-size: 2.35vw;
+}
+
+nav{
+    padding: 1rem;
+
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    flex-direction: row;
+}
+
+nav button {
+    width: 4vw;
+    height: 4vw;
+
+    border: none;
+    border-radius: 50%;
+
+    font-size: 2vw;
+    color: #fff;
+
+    background-color: #ac6fe4;
+}
+
+button{
+    cursor: pointer;
+    transition: 0.1s linear;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+
+button:active{
+    opacity: 0.7;
+}
+
+textarea{
+    resize: none;
+}
+
+.modal{
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    z-index: -1;
+    top: 0;
+
+    opacity: 0;
+    background-color: #00000070;
+    transition: 0.1s linear; 
+}
+
+.modal form{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+form input, form textarea {
+    width: 30vw;
+
+    padding: 3px;
+
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ac6fe4;
+}
+
+form input{
+    height: 2vw;
+    margin-bottom: 1rem;
+}
+
+form textarea {
+    height: 10vw;
+}
+
+form button {
+    width: 5vw;
+    height: 2vw;
+    
+    border: none;
+    border-radius: 5px;
+    
+    background-color: #ac6fe4;
+    font-size: 1vw;
+    color: #fff;
+}
+
+form div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.close {
+    width: 2vw;
+    height: 2vw;
+
+    font-size: 1vw;
+    font-weight: bold;
+
+    border-radius: 50%;
+    background-color: red;
+}
+
+form p {
+    font-size: 0.7vw;
+    color: #00000080;
+    margin-bottom: 1rem;
+}
+
+.taskCanvas{
+    width: 15vw;
+    height: 15vw;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    padding: 5px;
+    background-color: aquamarine;
+}
+
+.taskCanvas button {
+    width: 3vw;
+    height: 3vw;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: red;
+    align-self: flex-end;
+}
+
+.taskCanvas img {
+    width: 2vw;
+    margin-top: 3px;
+}
+
+main{
+    padding: 1rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.taskCanvas h2+p{
+    white-space: wrap;
+    z-index: -1;
+}
+
+h2 {
+    font-size: 1.8vw;
+    z-index: -1;
+}
+
+.toast {
+    width: 20vw;
+    height: 10vw;
+
+    position: absolute;
+    top: 1vw;
+    right: -20%;
+    z-index: 3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #cea2f8;
+    transition: ease 0.5s;
+    border-radius: 10px;
+    
+    text-align: center;
+    color: #fff;
+}
